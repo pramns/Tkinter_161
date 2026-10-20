@@ -106,3 +106,14 @@ tombol = tk.Button(
 )
 tombol.grid(row=13, column=0, columnspan=2, pady=(20, 15))
 
+label_hasil = tk.Label(
+    root,
+    text="Hasil Prediksi: -",
+    font=("Arial", 13, "bold"),
+    bg=WARNA_BG,
+    fg=WARNA_AKSEN,
+    justify="center"
+)
+label_hasil.grid(row=14, column=0, columnspan=2, pady=(0, 25))
+
+
