@@ -52,4 +52,34 @@ for i in range(10):
     entry_nilai.grid(row=nomor, column=1, sticky="w", pady=4)
 
     daftar_entry.append(entry_nilai) 
-    
+
+label_pilih = tk.Label(
+    root,
+    text="Pilih Jurusan Anda:",
+    font=("Arial", 10, "bold"),
+    bg=WARNA_BG,
+    fg=WARNA_TEKS
+)
+label_pilih.grid(row=11, column=0, columnspan=2, pady=(25, 5))
+
+daftar_jurusan = [
+    "Teknologi Informasi",
+    "Teknik Mesin",
+    "Teknik Sipil",
+    "Teknologi Elektro Medis",
+    "Teknologi Rekayasa Otomotif",
+    "Teknik Elektro",
+    "Artificial Teknologi",
+]
+
+combo_jurusan = ttk.Combobox(
+    root,
+    values=daftar_jurusan,            
+    state="readonly",                 
+    width=28,                         
+    height=7,                         
+    justify="center",
+    font=("Arial", 10)
+)
+combo_jurusan.current(0)              
+combo_jurusan.grid(row=12, column=0, columnspan=2)
