@@ -116,4 +116,5 @@ label_hasil = tk.Label(
 )
 label_hasil.grid(row=14, column=0, columnspan=2, pady=(0, 25))
 
+root.mainloop()
 
