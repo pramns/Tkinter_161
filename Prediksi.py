@@ -89,4 +89,20 @@ def hasil_prediksi():
         entry.get()
     prodi = "Teknologi Informasi"
     label_hasil.config(text="Hasil Prediksi:\n" + prodi)
-    
+
+tombol = tk.Button(
+    root,
+    text="Hasil Prediksi",
+    font=("Arial", 10, "bold"),
+    command=hasil_prediksi,
+    bg="#eceff4",
+    fg="#1e2138",
+    activebackground=WARNA_AKSEN,
+    relief="raised",
+    bd=2,
+    padx=10,
+    pady=4,
+    cursor="hand2"
+)
+tombol.grid(row=13, column=0, columnspan=2, pady=(20, 15))
+
