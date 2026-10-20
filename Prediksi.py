@@ -14,3 +14,11 @@ root.configure(bg=WARNA_BG)
 
 root.grid_columnconfigure(0, weight=1)
 root.grid_columnconfigure(1, weight=1)
+
+label_judul = tk.Label(
+    root,
+    text="Aplikasi Prediksi Prodi Pilihan",
+    font=("Arial", 16, "bold"),   # ukuran 16, tebal
+    bg=WARNA_BG,
+    fg=WARNA_TEKS
+)
