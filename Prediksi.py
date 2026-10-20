@@ -83,3 +83,10 @@ combo_jurusan = ttk.Combobox(
 )
 combo_jurusan.current(0)              
 combo_jurusan.grid(row=12, column=0, columnspan=2)
+
+def hasil_prediksi():
+    for entry in daftar_entry:
+        entry.get()
+    prodi = "Teknologi Informasi"
+    label_hasil.config(text="Hasil Prediksi:\n" + prodi)
+    
