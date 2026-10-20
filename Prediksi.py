@@ -10,3 +10,7 @@ WARNA_BG = "#1e2138"
 WARNA_TEKS = "#ffffff"
 WARNA_ENTRY = "#2f3350"
 WARNA_AKSEN = "#7be0d6"
+root.configure(bg=WARNA_BG)   
+
+root.grid_columnconfigure(0, weight=1)
+root.grid_columnconfigure(1, weight=1)
